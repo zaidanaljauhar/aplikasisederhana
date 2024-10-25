@@ -2,7 +2,7 @@ package com.example.myintentapp
 
 import android.content.Intent
 import android.os.Bundle
-import android.provider.Telephony.Mms.Intents
+import android.service.autofill.OnClickAction
 import android.widget.Button
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
@@ -21,11 +21,11 @@ class MainActivity : AppCompatActivity() {
         }
         val btnMoveActivity = findViewById<Button>(R.id.btn_move_activity)
         btnMoveActivity.setOnClickListener {
-            Onclick()
+            OnClick()
         }
     }
 
-    private fun Onclick() {
+    private fun OnClick() {
         val intent = Intent(applicationContext, MoveActivity::class.java)
         startActivity(intent)
     }

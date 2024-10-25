@@ -2,7 +2,7 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/main"
+    android:id="@+id/move"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MoveActivity">
@@ -12,7 +12,18 @@
         android:text="@string/this_is_move_activity"
         android:textSize="20sp"
         android:layout_marginTop="@dimen/activity_vertical_margin"
-        android:layout_marginLeft="@dimen/activity_horizontal_margin" />
+        android:layout_marginLeft="@dimen/activity_horizoltal_margin"
+        android:id="@+id/textpindah"/>
 
-
+    <Button
+        android:id="@+id/btn_move_act"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="@dimen/activity_horizoltal_margin"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:layout_marginRight="18dp"
+        android:text="@string/back_activity"
+        android:layout_below="@id/textpindah"
+        android:textSize="20sp" />
 </RelativeLayout>
